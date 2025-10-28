@@ -11,8 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Glided.Rose.Domain.Entities\Glided.Rose.Domain.Entities.csproj" />
-    <ProjectReference Include="..\Glided.Rose.Infrastructure.Repositories\Glided.Rose.Infrastructure.Repositories.csproj" />
+    <ProjectReference Include="..\Glided.Rose.Application.Services\Glided.Rose.Application.Services.csproj" />
   </ItemGroup>
 
 </Project>

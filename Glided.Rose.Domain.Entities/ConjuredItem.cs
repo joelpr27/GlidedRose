@@ -12,6 +12,20 @@ namespace Glided.Rose.Domain.Entities
         public string Name { get; set; }
         public int SellIn { get; set; }
         public int Quality { get; set; }
+        public ValueObject BaseValue { get; set; }
+
+        public ConjuredItem(string name, int sellIn, int quality, int goldValue)
+        {
+            Name = name;
+            SellIn = sellIn;
+            Quality = quality;
+            BaseValue = new ValueObject(goldValue);
+
+        }
+        public decimal GetDepreciatedValue()
+        {
+            return BaseValue.GoldPiece * (Quality / 100);
+        }
 
         public void UpgradeQuality()
         {

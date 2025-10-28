@@ -1,0 +1,31 @@
+[
+  {
+    "Type": "StandardItem",
+    "Name": "Apple",
+    "SellIn": 4,
+    "Quality": 10
+  },
+  {
+    "Type": "MatureItem",
+    "Name": "Aged brie",
+    "SellIn": 7,
+    "Quality": 10
+  },
+  {
+    "Type": "ConjuredItem",
+    "Name": "Magic Apple",
+    "SellIn": 7,
+    "Quality": 10
+  },
+  {
+    "Type": "LegendaryItem",
+    "Name": "Sulfuras",
+    "Quality": 80
+  },
+  {
+    "Type": "BackstagePasses",
+    "Name": "Concert",
+    "SellIn": 20,
+    "Quality": 25
+  }
+]

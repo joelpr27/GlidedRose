@@ -10,5 +10,6 @@ namespace Glided.Rose.Domain.Contracts
     {
         public string Name { get; }
         public int Quality { get; }
+        decimal GetDepreciatedValue();
     }
 }

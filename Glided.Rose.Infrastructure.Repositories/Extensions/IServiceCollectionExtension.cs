@@ -1,4 +1,4 @@
-﻿using Glided.Rose.Infrastructure.Repositories.Contracts;
+﻿using Glided.Rose.Domain.Contracts;
 using Glided.Rose.Infrastructure.Repositories.Implementations;
 using Microsoft.Extensions.DependencyInjection;
 

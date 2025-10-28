@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36603.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Glided.Rose", "Glided.Rose\Glided.Rose.csproj", "{E1C8BA2C-4153-4AF5-ADB3-7E4D164A889D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Glided.Rose.Console", "Glided.Rose\Glided.Rose.Console.csproj", "{E1C8BA2C-4153-4AF5-ADB3-7E4D164A889D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.DistributedServices", "1.DistributedServices", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
@@ -22,6 +22,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Infrastructure", "3. Infrastructure", "{61EC87DD-7695-42D7-9887-055039E687E7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Glided.Rose.Infrastructure.Repositories", "Glided.Rose.Infrastructure.Repositories\Glided.Rose.Infrastructure.Repositories.csproj", "{6751FBCA-2B44-473A-BC5D-4A7B11621C6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Glided.Rose.Application.Dtos", "Glided.Rose.Application.Dtos\Glided.Rose.Application.Dtos.csproj", "{7E3120CD-D927-42F8-9D00-9CC387B65246}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +55,10 @@ Global
 		{6751FBCA-2B44-473A-BC5D-4A7B11621C6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6751FBCA-2B44-473A-BC5D-4A7B11621C6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6751FBCA-2B44-473A-BC5D-4A7B11621C6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E3120CD-D927-42F8-9D00-9CC387B65246}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E3120CD-D927-42F8-9D00-9CC387B65246}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E3120CD-D927-42F8-9D00-9CC387B65246}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E3120CD-D927-42F8-9D00-9CC387B65246}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,6 +70,7 @@ Global
 		{07E97887-02FF-4115-AAC8-254B5B7D2C55} = {3B239DF0-A80A-4A8F-93FA-16DF16F461CE}
 		{EEAD940C-CE60-42E6-B68A-E594BACC3F83} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{6751FBCA-2B44-473A-BC5D-4A7B11621C6F} = {61EC87DD-7695-42D7-9887-055039E687E7}
+		{7E3120CD-D927-42F8-9D00-9CC387B65246} = {3B239DF0-A80A-4A8F-93FA-16DF16F461CE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C8855CF0-FD12-45B2-9844-C4F30DE6845A}

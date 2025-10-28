@@ -25,8 +25,7 @@ namespace Glided.Rose.Infrastructure.Repositories.Implementations
                 string name = element.GetProperty("Name").GetString()!;
                 int? sellIn = element.TryGetProperty("SellIn", out var s) ? s.GetInt32() : null;
                 int? quality = element.TryGetProperty("Quality", out var q) ? q.GetInt32() : null;
-                //int goldValue = element.GetProperty("GoldValue").GetInt32();    
-                int goldValue = 0;
+                int goldValue = element.GetProperty("GoldValue").GetInt32();
 
                 var item = _creator.CreateItem(type, name, sellIn, quality, goldValue);
                 items.Add(item);

@@ -10,7 +10,7 @@ namespace Glided.Rose.Application.Services.Extensions
         public static void AddApplicationServices(this IServiceCollection services)
         {
             services.AddScoped<IItemService, ItemsService>();
-
+            services.AddScoped<ICalculator, Calculator>();
         }
     }
 }

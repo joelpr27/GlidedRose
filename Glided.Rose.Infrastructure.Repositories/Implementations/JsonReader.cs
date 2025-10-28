@@ -1,12 +1,11 @@
 ﻿using Glided.Rose.Domain.Contracts;
-using Glided.Rose.Infrastructure.Repositories.Contracts;
 using System.Text.Json;
 
 namespace Glided.Rose.Infrastructure.Repositories.Implementations
 {
     public class JsonReader : IJsonReader
     {
-        private readonly string _filePath = @"C:\Users\Holacons\Desktop\University\Glided.Rose\items.json";
+        private readonly string _filePath = @"C:\Users\Holacons\Desktop\University\Glided.Rose\Data\Items.json";
         private readonly ItemCreator _creator = new();
 
 
@@ -26,8 +25,10 @@ namespace Glided.Rose.Infrastructure.Repositories.Implementations
                 string name = element.GetProperty("Name").GetString()!;
                 int? sellIn = element.TryGetProperty("SellIn", out var s) ? s.GetInt32() : null;
                 int? quality = element.TryGetProperty("Quality", out var q) ? q.GetInt32() : null;
+                //int goldValue = element.GetProperty("GoldValue").GetInt32();    
+                int goldValue = 0;
 
-                var item = _creator.CreateItem(type, name, sellIn, quality);
+                var item = _creator.CreateItem(type, name, sellIn, quality, goldValue);
                 items.Add(item);
             }
 
